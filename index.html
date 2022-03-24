@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; editor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Model Editor</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./index.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../../shared-assets/icons/favicon.png" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <model-viewer id="xr_box"
+        src="./models/untitled.glb"
+        ar
+        environment-image="./images/photo_studio_01_1k.hdr"
+        camera-controls
+        exposure="2"
+        alt="B_Shelf"
+        ar-scale="fixed"
+        bounds="tight">
+        <div class="controls">
+            <div id="btnBox"></div>
+        </div>
+        <button class="arStart" slot="ar-button">
+            <span class="material-icons">view_in_ar</span>
+            <br>
+            <b>XR 미리보기</b>
+        </button>
+    </model-viewer>
+</body>
+
+</html>
