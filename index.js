@@ -11,6 +11,7 @@ modelViewerVariants.addEventListener('load', () => {
         select.appendChild(button);
     }
     console.log({modelViewerVariants})
+    console.log({modelViewerVariants})
 });
 
 select.addEventListener('click', (event) => {
