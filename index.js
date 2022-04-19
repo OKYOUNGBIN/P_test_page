@@ -18,8 +18,3 @@
     //     modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
     // });
     
-const modelViewerVariants = document.querySelector("model-viewer#xr_box");
-if (modelViewerVariants.supports("ar")) {
-   // AR is available.
-   exposure = "2"
-}
