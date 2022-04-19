@@ -18,10 +18,10 @@
     //     modelViewerVariants.variantName = event.target.value === 'default' ? null : event.target.value;
     // });
     
-// const modelViewer = document.querySelector("model-viewer#xr_box");
-//     modelViewer.addEventListener('load', () => {
-//     for (const material of modelViewer.model.materials) {
-//       // Removes occlusion map from all materials.
-//       material.occlusionTexture.setTexture(null);
-//     }
-// });
+const modelViewer = document.querySelector("model-viewer#xr_box");
+    modelViewer.addEventListener('load', () => {
+    for (const material of modelViewer.model.materials) {
+      // Removes occlusion map from all materials.
+      material.occlusionTexture.setTexture(null);
+    }
+});
