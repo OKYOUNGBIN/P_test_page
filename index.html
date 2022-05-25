@@ -16,16 +16,23 @@
 
 
 <body>
-    <model-viewer camera-controls
+    <!-- <model-viewer camera-controls
     autoplay
     ar
     shadow-intensity="1"
     src="./models/ani2.glb"
     alt="An animated 3D model of a robot">
-</model-viewer>
-    <!-- <model-viewer id="xr_box" camera-controls ar ar-modes="webxr scene-viewer quick-look" autoplay
-        environment-image="./images/photo_studio_01_1k.hdr" exposure="2" alt="B_Shelf" src="./models/ani2.glb"
-        bounds="tight">
+</model-viewer> -->
+    <model-viewer id="xr_box"
+    camera-controls
+    autoplay
+    ar
+    ar-modes="webxr scene-viewer quick-look" 
+    environment-image="./images/photo_studio_01_1k.hdr"
+    exposure="2"
+    alt="B_Shelf"
+    src="./models/ani.glb"
+    >
         <div class="controls">
             <div id="btnBox"></div>
         </div>
@@ -34,7 +41,7 @@
             <br>
             <b>XR 미리보기</b>
         </button>
-    </model-viewer> -->
+    </model-viewer>
 </body>
 
 </html>
